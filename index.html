@@ -1,56 +1,106 @@
-TK Photography
-* About
-* Gallery
-* Contact
-* top
-About
-Hello! 
-I’m TK and I’m a photographer. I love looking at life through the lens of my camera. Landscape photography is my speciality and it’s taken me all over the world. 
-Gallery
-Here are some highlights of my work. The locations and year are in the caption. 
-
-Chile.png
-Chile, 2001
-
-Guatemala.png
-Guatemala, 1997
-
-Hawaii.png
-Hawaii, 2010
-
-Iran.png
-Iran, 1999
-
-Ireland.png
-Ireland, 2012
-
-Italy.png
-Italy, 2015
-
-Moab-Desert.png
-Moab Desert, 2020
-
-Rocky-Mountains.png
-Rocky Mountains, 2009
-
-Switzerland.png
-Switzerland, 2014
-
-UK.png
-UK, 2005
-
-USA.png
-USA, 2021
-
-Wyoming.png
-Wyoming, 2021
-Contact
-Please fill out this form and I’ll connect with you soon.
-
-Your contact information
-Name (Your full name)
-Email (Enter your email address)
-Message (What can I help you with?)
-Submit
-
-Copyright 2021 TK Photography
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="styles.css" rel="stylesheet">
+        <title>TK Photography - Photo Gallery</title>
+    </head>
+    <body>
+        <header>
+           <h1>TK Photography</h1> 
+        </header>
+        <nav>
+            <ul>
+                <li><a href="#about">* About</a></li>
+                <li><a href="#gallery">* Gallery</a></li>
+                <li><a href="#contact">* Contact</a></li>
+                <li><a href="top">* top</a></li>
+            </ul>
+        </nav>
+        <main>
+            <section>
+                <h2>About</h2>
+                
+                <p>Hello! </p>
+                
+                <p>I'm TK and I'm a photographer. I love looking at life through the lens of my camera. Landscape photography is my speciality and it's taken me all over the world.</p>
+               
+            </section>
+            <section>
+                <h2>Gallery</h2>
+                <p>Here are some highlights of my work. The locations and year are in the caption.</p>
+                <figure>
+                    <img src="/photos/Chile.png" alt="A sunrise view of the ocean from the beach, with a large natural rock wall framing the scene on the right.">
+                    <figcaption>Chile, 2001</figcaption>
+                </figure>
+                <figure>
+                    <img src="/photos/Guatemala.png" alt="A walkway is lined with purple flowers, leading to a lake framed by mountains in the distance. The scene unfolds at sunrise, under a sky painted in shades of purple.">
+                    <figcaption>Guatemala, 1997</figcaption>
+                </figure>
+                <figure>
+                    <img src="/photos/Hawaii.png" alt="An aerial view of the ocean shore set against towering green foliage-covered mountains, with clouds overhead and a brilliant blue sky.">
+                    <figcaption>Hawaii, 2010</figcaption>
+                </figure>
+                <figure>
+                    <img src="/photos/Iran.png" alt="A desert landscape featuring mountains in the distance, desert plants in the foreground, and a bright, white sky overhead.">
+                    <figcaption>Iran, 1999</figcaption>
+                </figure>
+                <figure>
+                    <img src="/photos/Ireland.png" alt="Green rolling hills with a small peak of a body of water to the right and a touch of fog in the distance create a white sky backdrop.">
+                    <figcaption>Ireland, 2012</figcaption>
+                </figure>
+                <figure>
+                    <img src="/photos/Italy.png" alt="View through forest trees, overlooking a bright green/blue lake with a towering mountain backdrop. A lone canoe floats on the serene lake.">
+                    <figcaption>Italy, 2015</figcaption>
+                </figure>
+                <figure>
+                    <img src="/photos/Moab-Desert.png" alt="Scenic view through a red rocky range at sunset from a high elevation, featuring rock hill formations stretching as far as the eye can see.">
+                    <figcaption>Moab Desert, 2020</figcaption>
+                </figure>
+                <figure>
+                    <img src="/photos/Rocky-Mountains.png" alt="Ground-level perspective from a bed of large rocks at the oceanfront, gazing up at towering Rocky Mountain formations along the water, set against stormy-looking clouds overhead.">
+                    <figcaption>Rocky Mountains, 2009</figcaption>
+                </figure>
+                <figure>
+                    <img src="/photos/Switzerland.png" alt="Snowy mountain landscape featuring tall green forest trees in the foreground and mountains in the distance, all under a serene light blue sky.">
+                    <figcaption>Switzerland, 2014</figcaption>
+                </figure>
+                <figure>
+                    <img src="/photos/UK.png" alt="Scenic view through a valley landscape with lush green hills on both sides, intensifying into brighter green hues near the horizon with a blue sky and a thin layer of white clouds.">
+                    <figcaption>UK, 2005</figcaption>
+                </figure>
+                <figure>
+                    <img src="/photos/USA.png" alt="Scenic view across an expanse of lush green ground, with red and yellow wildflowers in the foreground, leading the eye to a sunrise behind a distant forest covered by fluffy cloud cover.">
+                <figcaption>USA, 2021</figcaption>
+                </figure>
+                <figure>
+                    <img src="/photos/Wyoming.png" alt="View across a small, serene lake with green forest trees along the lake's edge and bright orange mountains in the background reflecting on the water's surface.">
+                    <figcaption>Wyoming, 2021</figcaption> 
+                </figure>
+            </section>
+            <form>
+                <h2>Contact</h2>
+                <p>Please fill out this form and I'll connect with you soon.</p>
+                <p>Your contact information</p>
+                <div class="row">
+                    <label for="name">Name </label>(Your full name)
+                    <input type="text" id="name" placeholder="Your full name">
+                </div>
+                <div class="row">
+                    <label for="email">Email </label>
+                    <input type="email" id="email" placeholder="Enter your email address">
+                </div>
+                <div class="row">
+                    <label for="message">Message</label>
+                    <input type="text" id="message" placeholder="What can I help you with?">
+                </div>
+                    <button type="submit">Submit</button>
+            </form>
+    </main>
+    <footer>
+        <p><small>Copyright 2021 TK Photography</small></p>
+    </footer>
+    </body>
+</html>
