@@ -1,7 +1,8 @@
-/* http://meyerweb.com/eric/tools/css/reset/
-v2.0 | 20110126
-License: none (public domain)
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
 */
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -11,69 +12,297 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
+article, aside, canvas, details, embed, 
 figure, figcaption, footer, header, hgroup, 
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
-    display: block;
+  display: block;
 }
 body {
-    line-height: 1;
+  line-height: 1;
 }
 ol, ul {
-    list-style: none;
+  list-style: none;
 }
 blockquote, q {
-    quotes: none;
+  quotes: none;
 }
 blockquote:before, blockquote:after,
 q:before, q:after {
-    content: '';
-    content: none;
+  content: '';
+  content: none;
 }
 table {
-    border-collapse: collapse;
-    border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
 /* start code global styles - mobile first */
 
 html {
-    background-color: #ffffff;
-    font-family: Arial, Helvetica, sans-serif;
+  background-color: #000000;
+  font-family: Arial, Helvetica, sans-serif;
 }
 body {
-    width: 485px;
-    margin: 0 auto;
-    /*background-color: #000000;*/
-}
-main {
-    background-color: #ffffff;
+  width: 485px;
+  margin: 0 auto;
+  background-color: #000000;
 }
 
-/*text styling*/
-p {
-    font-size: 1.25em;
+header {
+  background-color: #ffffff;
 }
-figcaption, label, input, small  {
-    figcaption, label, input, small font-size: 1em;
+main {
+  background-color: #ffffff;
+}
+form {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+/*nav styles*/
+
+nav {
+  text-align: center;
+  padding: 30px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex; 
+  justify-content: center; 
+  align-items: center;
+}
+
+nav a {
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #ffffff;
+  padding: 5px;
+  margin: 0 10px;
+  display: block; 
+}
+ 
+[href="#top"] {
+  position: fixed;
+  bottom: 0px;
+  right: -62px;
+  border: 3px solid #ffffff; /* Specify the border style, width, and color */
+  border-radius: 0;
+}
+
+
+
+/*gallery styles*/
+.gallery {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  justify-items: center;
+  justify-content: center;
+  margin: 10px 0 10px 0;
+  gap: 10px;
+}
+
+/* figure styles */
+figure {
+    position: relative;
+  }
+  
+  /* figcaption styles */
+  figcaption {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1em;
+  }
+  
+  /* white, bottom position */
+  figure:nth-child(1) figcaption,
+  figure:nth-child(3) figcaption,
+  figure:nth-child(7) figcaption {
+    color: white;
+    bottom: 10px;
+  }
+  
+  /* white, top position */
+  figure:nth-child(2) figcaption,
+  figure:nth-child(12) figcaption {
+    color: white;
+    top: 10px;
+  }
+  
+  /* black, top position */
+  figure:nth-child(4) figcaption,
+  figure:nth-child(5) figcaption,
+  figure:nth-child(8) figcaption,
+  figure:nth-child(9) figcaption,
+  figure:nth-child(10) figcaption,
+  figure:nth-child(11) figcaption {
+    color: black;
+    top: 10px;
+  }
+  
+  /* black, bottom position */
+  figure:nth-child(6) figcaption {
+    color: black;
+    bottom: 10px;
+  }
+  
+
+
+/* form styles */
+form h2, form p {
+  margin: 10px 0 20px 0;
+  text-align: center;
+}
+form {
+  text-align: center;
+  padding: 20px 0 20px 0;
+}
+form .row {
+  margin: 15px 0;
+  text-align: left;
+}
+form label {
+  display: block;
+  margin-bottom: 5px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+form input {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+  margin-top: 5px;
+  text-transform: uppercase;
+}
+form button {
+  background-color: #007d7b;
+  color: #ffffff;
+  border: none;
+  width: 300px;
+  height: 40px;
+  border-radius: 15px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+form p ~ p {
+  visibility: hidden;
+}
+form input::placeholder {
+  color: #007d7b;
+}
+
+/* text styling */
+p {
+  font-size: 1.25em;
+  margin: 10px 0px 10px 10px;
+  text-align: left;
+  line-height: 1.25em;
+}
+figcaption, label, input, small {
+  font-size: 1em;
+  text-transform: uppercase;
 }
 nav a {
-    font-size: 1.5em;
+  font-size: 1.5em;
 }
 h1 {
-    font-family: Arial, Helvetica, sans-serif;
+  font-size: 3em;
+  text-align: center;
+  color: #007d7b;
+  text-transform: uppercase;
+  font-weight: bold;
 }
 h2 {
-    font-size: 2em; 
+  font-size: 2em;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 10px;
+}
+footer p {
+  color: #ffffff;
+  text-align: center;
+}
+
+
+/* medium screen size */
+@media screen and (min-width: 880px) {
+  body{
+    width: 880px;
+  }
+  /* gallery styles */
+  .gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-evenly;
+    margin: 20px 10px 20px 10px;
+    gap: 15px;
+    
+  }
+  h1 {
+    text-align: left;
+  }
+  form button {
+    width: 500px;
+  }
+[href="#top"] {
+    visibility: hidden;
+}
+}
+
+
+/* large screen size */
+@media screen and (min-width: 1300px) {
+    body{
+    width: 1300px;
+  }
+  .gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-evenly;
+    margin: 20px 10px 20px 10px;
+    gap: 15px;
+  }
+
+
+  nav {
+    text-align: right;
+  }
+
+  nav ul {
+    list-style: none;
+    display: flex; 
+    justify-content: right; 
+  }
+
+  nav a {
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #ffffff;
+    padding: 5px;
+    margin: 0 10px;
+    display: block; 
+  }
+  h1 {
+    text-align: left;
+  }
+  form button {
+    width: 600px;
+  }
 }
